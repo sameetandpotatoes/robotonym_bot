@@ -1,0 +1,17 @@
+{
+  "name": "robotonym",
+  "version": "1.0.0",
+  "description": "@robotonym made by Sameet Sapra",
+  "main": "main.js",
+  "scripts": {
+    "start": "supervisor main.js"
+  },
+  "dependencies": {
+    "request": "v2.53.0",
+    "node-twitterbot": "0.2.2",
+    "express": "3.5.1",
+    "redwrap": "0.0.4"
+  },
+  "author": "Sameet-Sapra",
+  "license": "ISC"
+}
