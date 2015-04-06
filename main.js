@@ -12,7 +12,7 @@ var TwitterBot = require("node-twitterbot").TwitterBot;
 var bot = new TwitterBot(settings.twitterAccess);
 
 var headers = {
-  "User-Agent": "robotonym",
+  "User-Agent": settings.screenName,
   "ETag": "a18c3bded88eb5dbb5c849a489412bf3"
 };
 
@@ -66,6 +66,5 @@ function randomly_tweet(rand){
 }
 // Main program starts here
 setInterval(function(){
-    var rand = Math.random();
-    randomly_tweet(rand);
+  randomly_tweet(Math.random());
 }, 900000);
